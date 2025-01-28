@@ -17,8 +17,95 @@
     <!-- Tailwind & Daisy UI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS Styles -->
+     <style>
+        .font-manrope{
+            font-family: "Manrope", serif;
+        }
+     </style>
+
+     <!-- Customization tailwindcss -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                arrow: '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+<body class="max-w-7xl mx-auto font-manrope">
+    <!-- Header Section -->
+     <header class="w-11/12 mx-auto">
+        <nav class="mt-5">
+            <!-- Navbar Container -->
+            <div class="navbar flex justify-between">
+                <!-- Brands name -->
+                <div class="flex items-center">
+                    <a href="" class="">
+                    <i class="fa-solid fa-arrow-up-long rotate-45 text-lg w-7 h-7 bg-arrow rounded-full text-center"></i>
+                    <a href="" class="text-3xl font-extrabold text-gray-800">Rinterio</a>    
+                    </a>
+                </div>
+                <!-- Navigation Items -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Dropdown and Icon container -->
+                <div class="flex gap-5">
+                    <!-- Search, Card & Button -->
+                    <div class="items-center gap-5 hidden sm:flex">
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping text-lg"></i>
+                        </a>
+                        <button class="btn bg-arrow rounded-3xl text-xl font-bold hover:bg-arrow hover:opacity-80">
+                            Book Consult
+                            <i class="fa-solid fa-arrow-up-long rotate-45 text-lg w-7 h-7 bg-black text-arrow rounded-full text-center"></i>
+                        </button>
+                    </div>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                        </div>
+                        <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+     </header>
 </body>
 </html>
