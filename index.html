@@ -71,10 +71,10 @@
                 <div class="flex gap-5">
                     <!-- Search, Card & Button -->
                     <div class="items-center gap-5 hidden sm:flex">
-                        <a href="">
+                        <a href="" class="bg-white rounded-full w-8 h-8 flex justify-center items-center">
                             <i class="fa-solid fa-magnifying-glass text-lg"></i>
                         </a>
-                        <a href="">
+                        <a href="" class="bg-white rounded-full w-8 h-8 flex justify-center items-center">
                             <i class="fa-solid fa-cart-shopping text-lg"></i>
                         </a>
                         <button class="btn bg-primary rounded-3xl text-xl font-bold hover:bg-primary hover:opacity-80">
@@ -84,19 +84,8 @@
                     </div>
                     <!-- Dropdown Menu -->
                     <div class="dropdown lg:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                        <div tabindex="0" role="button">
+                        <i class="fa-solid fa-bars text-lg bg-white rounded-full w-8 h-8 flex justify-center items-center"></i>
                         </div>
                         <ul
                         tabindex="0"
@@ -260,8 +249,76 @@
          </section>
 
         <!-- Latest Portfolio section -->
-         <section>
+         <section class="lg:bg-white">
+            <div class="w-11/12 lg:w-4/5 mx-auto py-16 space-y-4">
+                <!-- Section Title -->
+                <div class="max-w-2xl mx-auto text-center space-y-5 mb-6">
+                    <p>
+                    <span class="font-bold text-dark-2 bg-secondary px-3 rounded-lg"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</span>
+                    </p>
+                    <h2 class="text-4xl font-extrabold text-dark-1 tracking-tight">Our Latest Portfolio</h2>
+                    <p class="font-medium text-dark-2">Explore our latest portfolio showcasing innovative designs, creative solutions, and stunning projects that reflect our expertise and craftsmanship.</p>
+                </div>
+                <!-- Portfolio item 1-->
+                 <div class="grid lg:grid-cols-3 gap-4 py-5">
+                    <div class="bg-white p-5 flex flex-col md:flex-row gap-5 rounded-xl items-center col-span-2">
+                        <div class="w-full h-full">
+                            <img src="assets/img1.png" alt="" class="h-full">
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <h3 class="text-2xl text-dark-2 font-extrabold">Commercial</h3>
+                            <p class="text-dark-3 font-medium">
+                                We design functional, stylish commercial spaces that boost productivity, attract customers, and leave a lasting impression.</p>
+                            <button class="rounded-3xl text-xl font-extrabold text-dark-1">
+                                View Details
+                                <i class="fa-solid fa-arrow-up-long rotate-45 text-lg w-7 h-7 bg-primary rounded-full text-center"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="assets/img2.png" alt="" class="h-full hidden lg:block">
+                 </div>
+                <!-- Portfolio item 2 -->
+                 <div class="grid md:grid-cols-2 lg:hidden  gap-5">
+                    <div class="bg-white p-5 rounded-xl">
+                        <img src="assets/img2.png" alt="" class="h-full">
+                    </div>
+                    <div class="bg-white p-5 rounded-xl">
+                        <img src="assets/img5.png" alt="" class="w-full">
+                    </div>
+                 </div>
+                <!-- Portfolio item 3 -->
+                 <div class="grid lg:grid-cols-5 gap-6">
 
+                    <img src="assets/img3.png" alt="" class="h-full hidden lg:block">
+
+                    <div class="bg-white flex flex-col md:flex-row gap-5 rounded-xl items-center lg:col-span-3 p-5 lg:p-0">
+                        <div class="w-full h-full">
+                            <img src="assets/img4.png" alt="" class="h-full">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-2xl text-dark-2 font-extrabold">Residential</h3>
+                            <p class="text-dark-3 font-medium">
+                                We create comfortable, stylish residential spaces that so luxurious mood and modern living for a perfect home experience.</p>
+                            <button class="rounded-3xl text-xl font-extrabold text-dark-1">
+                                View Details
+                                <i class="fa-solid fa-arrow-up-long rotate-45 text-lg w-7 h-7 bg-primary rounded-full text-center"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <img src="assets/img5.png" alt="" class="h-full hidden lg:block">
+                 </div>
+                <!-- Portfolio item 4 -->
+                <div class="grid md:grid-cols-2 lg:hidden  gap-5">
+                    <div class="bg-white p-5 rounded-xl">
+                        <img src="assets/img3.png" alt="" class="w-full">
+                    </div>
+                    <div class="bg-white p-5 rounded-xl">
+                        <img src="assets/img5.png" alt="" class="w-full">
+                    </div>
+                 </div>
+            </div>
          </section>
 
         <!-- Articles and News section -->
@@ -339,7 +396,7 @@
              </div>
          </section>
 
-        <!-- Discuss next project section -->
+        <!-- Form section -->
          <section class="bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover border-4 md:border-8 border-white p-4 md:p-16 lg:p-24">
             <div class="w-11/12 lg:w-4/5 mx-auto">
             <!-- Section Title -->
@@ -359,7 +416,7 @@
                     <textarea type="email" name="" id="" placeholder="Write your message here" required class="w-full p-4 rounded-3xl md:col-span-2 h-56"></textarea>
                 </form>
                 <button class="btn bg-primary rounded-3xl text-xl font-bold text-dark-1 hover:bg-primary hover:opacity-80 border-none mt-10 w-full">
-                    View Details
+                    Send Email
                     <i class="fa-solid fa-arrow-up-long rotate-45 text-lg w-7 h-7 text-secondary bg-black rounded-full text-center"></i>
                 </button>
             </div>
