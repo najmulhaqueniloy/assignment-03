@@ -45,7 +45,7 @@
 </head>
 <body class="max-w-7xl mx-auto font-manrope bg-[#F4F4F4]">
     <!-- Header Section -->
-     <header class="bg-gradient-to-r from-[#F4F4F4] to-[#ffffff] pb-16 pt-5">
+     <header class="bg-gradient-to-b from-[#F4F4F4] to-[#ffffff] pb-16 pt-5">
         <!-- Navbar -->
         <nav class="w-11/12 mx-auto">
             <!-- Navbar Container -->
@@ -137,7 +137,7 @@
      <!-- Main Section -->
       <main>
         <!-- Thoughtful design section -->
-        <section  class="w-11/12 lg:w-4/5 mx-auto mt-14 mb-20">
+        <section  class="w-11/12 lg:w-4/5 mx-auto md:mt-14 md:mb-20">
                 <div class="flex flex-col lg:flex-row justify-between items-center gap-10">
                     <!-- Text content -->
                     <div class="w-full space-y-6">
@@ -221,7 +221,7 @@
         </section>
 
         <!-- Works Places section -->
-         <section class="w-11/12 lg:w-4/5 mx-auto my-20">
+         <section class="w-11/12 lg:w-4/5 mx-auto my-7 md:my-20">
             <!-- Section Title -->
             <div class="max-w-2xl mx-auto text-center space-y-5 mb-6">
                 <p>
@@ -265,7 +265,7 @@
          </section>
 
         <!-- Articles and News section -->
-         <section class="w-11/12 lg:w-4/5 mx-auto my-20">
+         <section class="w-11/12 lg:w-4/5 mx-auto my-7 md:my-20">
             <!-- Section Title -->
             <div class="max-w-2xl mx-auto text-center space-y-5 mb-6">
                 <p>
@@ -340,8 +340,29 @@
          </section>
 
         <!-- Discuss next project section -->
-         <section class="w-11/12 lg:w-4/5 mx-auto">
-
+         <section class="bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover border-4 md:border-8 border-white p-4 md:p-16 lg:p-24">
+            <div class="w-11/12 lg:w-4/5 mx-auto">
+            <!-- Section Title -->
+            <div class="max-w-2xl mx-auto text-center space-y-5 mb-6">
+                <p>
+                   <span class="font-bold text-dark-2 bg-secondary px-3 rounded-lg"><i class="fa-solid fa-arrow-right"></i> Let's Connect</span>
+                </p>
+                <h2 class="text-4xl font-extrabold text-dark-1 tracking-tight">Let’s Discuss Next Project</h2>
+                <p class="font-medium text-dark-2">Ready to start your next project? Let’s discuss your vision, ideas, and goals to create something truly exceptional together.</p>
+            </div>
+            <!-- Form -->
+                <form class="grid md:grid-cols-2 gap-5">
+                    <input type="text" name="" id="" placeholder="First Name*" required class="w-full p-4 rounded-3xl">
+                    <input type="text" name="" id="" placeholder="Last Name*" required class="w-full p-4 rounded-3xl">
+                    <input type="text" name="" id="" placeholder="Phone Number*" required class="w-full p-4 rounded-3xl">
+                    <input type="email" name="" id="" placeholder="Phone Number*" required class="w-full p-4 rounded-3xl">
+                    <textarea type="email" name="" id="" placeholder="Write your message here" required class="w-full p-4 rounded-3xl md:col-span-2 h-56"></textarea>
+                </form>
+                <button class="btn bg-primary rounded-3xl text-xl font-bold text-dark-1 hover:bg-primary hover:opacity-80 border-none mt-10 w-full">
+                    View Details
+                    <i class="fa-solid fa-arrow-up-long rotate-45 text-lg w-7 h-7 text-secondary bg-black rounded-full text-center"></i>
+                </button>
+            </div>
          </section>
       </main>
 
